@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import com.example.parcours_mobile_9_fragments.adapters.PagerAdapter;
 import com.example.parcours_mobile_9_fragments.R;

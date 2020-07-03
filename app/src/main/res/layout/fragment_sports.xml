@@ -5,12 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".fragments_act.SportsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/sports_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Sports"
-        android:textSize="36sp"
-        android:textStyle="bold" />
-
+        android:layout_height="match_parent" />
 </FrameLayout>
