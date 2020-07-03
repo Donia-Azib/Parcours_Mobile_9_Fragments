@@ -1,9 +1,13 @@
 package com.example.parcours_mobile_9_fragments.fragments_act;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.parcours_mobile_9_fragments.adapters.PagerAdapter;
@@ -55,5 +59,20 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.map_menu,menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId() == R.id.map_btn)
+        {
+            startActivity(new Intent(MainActivity.this,MapsActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

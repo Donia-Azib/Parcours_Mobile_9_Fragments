@@ -1,5 +1,6 @@
 package com.example.parcours_mobile_9_fragments.fragments_act;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -43,6 +45,16 @@ public class GamesFragment extends Fragment {
 
         setListGameData();
 
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Game game_item = (Game) parent.getItemAtPosition(position);
+                String game_id = game_item.getId();
+                Intent i = new Intent(getActivity(),GameDetailActivity.class);
+                i.putExtra("game_id",game_id);
+                startActivity(i);
+            }
+        });
 
 
         return view;
