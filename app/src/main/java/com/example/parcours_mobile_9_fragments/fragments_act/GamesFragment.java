@@ -52,6 +52,9 @@ public class GamesFragment extends Fragment {
         String url = "https://rawg-video-games-database.p.rapidapi.com/games";
         Ion.with(getActivity())
                 .load(url)
+                .setHeader("x-rapidapi-host","rawg-video-games-database.p.rapidapi.com")
+                .setHeader("x-rapidapi-key","1eca79ea2fmshb41dd269e4b7f29p16c9b3jsnc398cc5272a7")
+                .setHeader("useQueryString","true")
                 .asJsonObject()
                 .setCallback(new FutureCallback<JsonObject>() {
                     @Override
