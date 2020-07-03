@@ -1,4 +1,8 @@
-package com.example.parcours_mobile_9_fragments;
+package com.example.parcours_mobile_9_fragments.adapters;
+
+import com.example.parcours_mobile_9_fragments.fragments_act.GamesFragment;
+import com.example.parcours_mobile_9_fragments.fragments_act.HotelsFragment;
+import com.example.parcours_mobile_9_fragments.fragments_act.SportsFragment;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

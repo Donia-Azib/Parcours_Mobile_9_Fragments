@@ -1,10 +1,12 @@
-package com.example.parcours_mobile_9_fragments;
+package com.example.parcours_mobile_9_fragments.fragments_act;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 
+import com.example.parcours_mobile_9_fragments.adapters.PagerAdapter;
+import com.example.parcours_mobile_9_fragments.R;
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {

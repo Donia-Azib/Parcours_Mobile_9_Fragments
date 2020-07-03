@@ -1,4 +1,4 @@
-package com.example.parcours_mobile_9_fragments;
+package com.example.parcours_mobile_9_fragments.fragments_act;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.parcours_mobile_9_fragments.R;
 
 
 /**
